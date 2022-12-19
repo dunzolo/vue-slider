@@ -36,7 +36,16 @@ createApp({
         }
     },
     methods: {
-        
+        goToNextSlides(){
+            this.item_active++;
+            if(this.item_active > this.array.length - 1)
+                this.item_active = 0;
+        },
+        goToPreviousSlides(){
+            this.item_active--;
+            if(this.item_active < 0)
+                this.item_active = this.array.length - 1;
+        }
     },
 }).mount('#app')
 
