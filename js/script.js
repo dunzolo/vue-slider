@@ -24,26 +24,26 @@ createApp({
                     title: "Fortnite",
                     description: "Fortnite",
                     circle: ''
-
                 },
                 {
                     url_image:"./img/04.webp",
                     title: "Stray",
                     description: "Stray",
                     circle: ''
-
                 },
                 {
                     url_image:"./img/05.webp",
                     title: "Avengers",
                     description: "Avengers",
                     circle: ''
-
                 }
             ]        
         }
     },
     methods: {
+        changeImage(index){
+            this.item_active = index;
+        },
         goToNextSlides(){
             this.item_active++;
             if(this.item_active > this.array.length - 1)

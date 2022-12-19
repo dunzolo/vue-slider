@@ -23,7 +23,7 @@
                     </div>
                     <div class="item-slider">
                         <div class="item" :class="(item_active == index) ? 'active' : ''" v-for="(image, index) in array">
-                            <img :src="image.url_image">
+                            <img :src="image.url_image" @click="changeImage(index)">
                         </div>
                         <div class="arrow prev" @click="goToPreviousSlides">&uarr;</div>
                         <div class="arrow next" @click="goToNextSlides">&darr;</div>
@@ -31,10 +31,6 @@
                 </div>
                 <div class="circles-container">
                     <div class="circle" :class="(item_active == index) ? 'active' : ''" v-for="(circle, index) in array"></div>
-                    <!-- <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div> -->
                 </div>
             </div>
         </div>

@@ -122,13 +122,8 @@
 }
 
 .main-image{
-    /* display: none; */
     height: 100%;
     position: relative;
-}
-
-.d-block{
-    display: block;
 }
 
 .caption{
@@ -156,7 +151,6 @@
     margin: 10px;
     cursor: pointer;
 }
-
 
 .circle.active, .circle:hover{
     background-color: rgba(174, 174, 174, 1); 
