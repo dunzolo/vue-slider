@@ -6,6 +6,8 @@ createApp({
     data() {
         return {
             item_active: 0,
+            loop: '',
+            loop_reverse: '',
             array: [
                 {
                     url_image:"./img/01.webp",
@@ -37,12 +39,29 @@ createApp({
                     description: "Avengers",
                     circle: ''
                 }
-            ]        
+            ]
         }
     },
     methods: {
         changeImage(index){
             this.item_active = index;
+        },
+        startAutoplay(){
+            this.loop = setInterval(() => {
+                this.goToNextSlides();
+            }, 2000)
+        },
+        stopAutoplay(){
+            clearInterval(this.loop_reverse);
+            clearInterval(this.loop);
+            this.loop = null;
+            this.loop_reverse;
+        },
+        reverseAutoplay(){
+            clearInterval(this.loop);
+            this.loop_reverse = setInterval(() => {
+                this.goToPreviousSlides();
+            }, 2000)
         },
         goToNextSlides(){
             this.item_active++;

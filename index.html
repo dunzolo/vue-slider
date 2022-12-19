@@ -11,13 +11,13 @@
         <div id="app">
             <div class="container">
                 <div class="button-container">
-                    <button id="reverse">Reverse</button>
-                    <button id="start">Start</button>
-                    <button id="stop">Stop</button>
+                    <button id="reverse" @click="reverseAutoplay">Reverse</button>
+                    <button id="start" @click="startAutoplay">Start</button>
+                    <button id="stop" @click="stopAutoplay">Stop</button>
                 </div>
                 <div class="slider">
                     <div class="item-left">
-                        <div class="main-image">
+                        <div class="main-image" @mouseover="stopAutoplay" @mouseleave="startAutoplay">
                             <img :src="array[item_active].url_image">
                         </div>
                     </div>
