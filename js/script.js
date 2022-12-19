@@ -10,27 +10,35 @@ createApp({
                 {
                     url_image:"./img/01.webp",
                     title: "Spiderman",
-                    description: "Spiderman"
+                    description: "Spiderman",
+                    circle: ''
                 },
                 {
                     url_image:"./img/02.webp",
                     title: "Ratchet & Clank",
-                    description: "Ratchet & Clank"
+                    description: "Ratchet & Clank",
+                    circle: ''
                 },
                 {
                     url_image:"./img/03.webp",
                     title: "Fortnite",
-                    description: "Fortnite"
+                    description: "Fortnite",
+                    circle: ''
+
                 },
                 {
                     url_image:"./img/04.webp",
                     title: "Stray",
-                    description: "Stray"
+                    description: "Stray",
+                    circle: ''
+
                 },
                 {
                     url_image:"./img/05.webp",
                     title: "Avengers",
-                    description: "Avengers"
+                    description: "Avengers",
+                    circle: ''
+
                 }
             ]        
         }

@@ -30,11 +30,11 @@
                     </div>
                 </div>
                 <div class="circles-container">
+                    <div class="circle" :class="(item_active == index) ? 'active' : ''" v-for="(circle, index) in array"></div>
+                    <!-- <div class="circle"></div>
                     <div class="circle"></div>
                     <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
+                    <div class="circle"></div> -->
                 </div>
             </div>
         </div>
