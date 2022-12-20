@@ -6,8 +6,8 @@ createApp({
     data() {
         return {
             item_active: 0,
-            loop: '',
-            loop_reverse: '',
+            loop: null,
+            loop_reverse: null,
             array: [
                 {
                     url_image:"./img/01.webp",
@@ -42,6 +42,9 @@ createApp({
             ]
         }
     },
+    created(){
+        this.startAutoplay();
+    },
     methods: {
         changeImage(index){
             this.item_active = index;
@@ -54,8 +57,8 @@ createApp({
         stopAutoplay(){
             clearInterval(this.loop_reverse);
             clearInterval(this.loop);
-            this.loop = null;
-            this.loop_reverse;
+            // this.loop = null;
+            // this.loop_reverse = null;
         },
         reverseAutoplay(){
             clearInterval(this.loop);

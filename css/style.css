@@ -118,7 +118,7 @@
 
 .item.active{
     opacity: 1;
-    border: 3px solid rgb(164, 234, 103);
+    outline: 3px solid rgb(164, 234, 103);
 }
 
 .main-image{
